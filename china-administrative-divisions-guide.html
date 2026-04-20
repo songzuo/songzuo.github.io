@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Guide to China's 5-Level Administrative Division System | 7zi Blog</title>
+  <meta name="description" content="A comprehensive guide to China's provincial, prefecture, county, township, and village administrative hierarchy with data and examples.">
+  <link rel="canonical" href="https://songzuo.github.io/china-administrative-divisions-guide.html">
+  <meta property="og:title" content="Complete Guide to China's 5-Level Administrative Division System">
+  <meta property="og:description" content="A comprehensive guide to China's provincial, prefecture, county, township, and village administrative hierarchy with data and examples.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://songzuo.github.io/china-administrative-divisions-guide.html">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Complete Guide to China's 5-Level Administrative Division System",
+  "description": "A comprehensive guide to China's provincial, prefecture, county, township, and village administrative hierarchy with data and examples.",
+  "datePublished": "2025-04-20",
+  "author": {
+    "@type": "Organization",
+    "name": "7zi",
+    "url": "https://7zi.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "7zi",
+    "url": "https://7zi.com/"
+  },
+  "mainEntityOfPage": "https://songzuo.github.io/china-administrative-divisions-guide.html",
+  "url": "https://songzuo.github.io/china-administrative-divisions-guide.html"
+}</script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-brand"><a href="https://7zi.com/">7zi</a></div>
+    <div class="nav-links">
+      <a href="https://7zi.com/">Home</a> | <a href="https://7zi.com/china/">China Divisions</a> | <a href="./index.html">Blog</a>
+    </div>
+  </nav>
+  <main class="article-page">
+    <article>
+      <header>
+        <h1>Complete Guide to China's 5-Level Administrative Division System</h1>
+        <p class="meta">2025-04-20 &middot; 12 min read</p>
+      </header>
+      <div class="article-body">
+        <hr>
+<p>title: "Complete Guide to China's 5-Level Administrative Division System"</p>
+<p>published: false</p>
+<p>description: "An in-depth exploration of how China organizes its vast territory through a 5-tier administrative hierarchy — from provinces down to villages. Includes data, code examples, and interactive links."</p>
+<p>tags: china, data, geography, opendata, python</p>
+<hr>
+
+<h1>Complete Guide to China's 5-Level Administrative Division System</h1>
+
+<p>China is the world's third-largest country by area and the most populous nation on Earth. Governing 9.6 million square kilometers and 1.4 billion people requires a highly structured administrative system. This guide breaks down every layer of China's <strong>5-level administrative division system</strong>, explains how the hierarchy works, and provides practical resources for developers and researchers working with Chinese geographic data.</p>
+
+<h2>The 5 Levels at a Glance</h2>
+
+<table>
+<tr><td>Level</td><td>Chinese</td><td>English</td><td>Count</td><td>Example</td></tr>
+<tr><td>-------</td><td>---------</td><td>---------</td><td>-------</td><td>---------</td></tr>
+<tr><td>1</td><td>省/直辖市/自治区</td><td>Province/Municipality/Autonomous Region</td><td>34</td><td>广东省 (Guangdong Province)</td></tr>
+<tr><td>2</td><td>地级市/自治州</td><td>Prefecture-Level City</td><td>333</td><td>深圳市 (Shenzhen City)</td></tr>
+<tr><td>3</td><td>县/县级市/市辖区</td><td>County/District</td><td>2,844</td><td>杭州市西湖区 (Xihu District, Hangzhou)</td></tr>
+<tr><td>4</td><td>乡镇/街道</td><td>Township/Subdistrict</td><td>~40,900</td><td>乌镇 (Wuzhen Town)</td></tr>
+<tr><td>5</td><td>村/社区</td><td>Village/Community</td><td>~620,500</td><td>—</td></tr>
+</table>
+
+<p>That's roughly <strong>665,000</strong> administrative units in total — one of the most granular geographic classification systems in the world.</p>
+
+<h2>Why Does This Matter?</h2>
+
+<p>Understanding China's administrative divisions is critical for:</p>
+
+<ul>
+<li><strong>Logistics & supply chain</strong> — Route optimization and last-mile delivery depend on accurate location data</li>
+<li><strong>Market research</strong> — Consumer behavior varies dramatically between provinces and even between districts within the same city</li>
+<li><strong>Real estate & urban planning</strong> — Property prices, zoning regulations, and development policies all operate at the administrative division level</li>
+<li><strong>Data science & GIS</strong> — Any spatial analysis of China requires a properly coded geographic hierarchy</li>
+<li><strong>Compliance & regulation</strong> — Data localization, tax policies, and business registration all reference specific administrative codes</li>
+
+</ul>
+<h2>Deep Dive Into Each Level</h2>
+
+<h3>Level 1: Provinces (省级)</h3>
+
+<p>China has <strong>34 province-level divisions</strong>:</p>
+
+<ul>
+<li><strong>23 provinces</strong> (省) — e.g., Guangdong, Zhejiang, Sichuan</li>
+<li><strong>4 municipalities</strong> (直辖市) — Beijing, Shanghai, Tianjin, Chongqing (directly under central government control)</li>
+<li><strong>5 autonomous regions</strong> (自治区) — Xinjiang, Tibet, Inner Mongolia, Guangxi, Ningxia (designed for minority ethnic groups)</li>
+<li><strong>2 special administrative regions</strong> (特别行政区) — Hong Kong and Macau (one country, two systems)</li>
+
+</ul>
+<p>Each province is identified by a <strong>2-digit administrative code</strong> (adcode). For example:</p>
+<ul>
+<li>Beijing: <code>110000</code></li>
+<li>Guangdong: <code>440000</code></li>
+<li>Xinjiang: <code>650000</code></li>
+
+</ul>
+<blockquote><strong>Fun fact:</strong> Henan Province (population 99M) has more people than Germany, while the entire population of Xinjiang Autonomous Region (25M) is roughly the same as Australia.</blockquote>
+
+<h3>Level 2: Prefecture-Level Cities (地级)</h3>
+
+<p>Below provinces sit <strong>333 prefecture-level divisions</strong>. Most are prefecture-level cities (地级市), though the category also includes:</p>
+
+<ul>
+<li>Prefectures (地区)</li>
+<li>Autonomous prefectures (自治州)</li>
+<li>Leagues (盟) — found only in Inner Mongolia</li>
+
+</ul>
+<p>Prefecture-level cities often have names like "X市" (X City). Their administrative codes are 4-digit prefixes of their parent province code.</p>
+
+<blockquote><strong>Notable example:</strong> Shenzhen (code 440300) went from a fishing village of 30,000 people in 1980 to a megacity of 17.5M today — all within Guangdong Province.</blockquote>
+
+<h3>Level 3: Counties and Districts (县级)</h3>
+
+<p>This level has <strong>2,844 divisions</strong> and is where things get complex:</p>
+
+<ul>
+<li><strong>Municipal districts</strong> (市辖区) — Urban areas within a prefectecture-level city</li>
+<li><strong>County-level cities</strong> (县级市) — Smaller cities with some autonomy</li>
+<li><strong>Counties</strong> (县) — Rural administrative areas</li>
+<li><strong>Autonomous counties</strong> (自治县)</li>
+<li><strong>Banners</strong> (旗) — Found in Inner Mongolia</li>
+
+</ul>
+<blockquote><strong>Urban vs. Rural distinction:</strong> A key concept in Chinese urban statistics is distinguishing urban districts (区) from rural areas (县). When you hear "Beijing has 21.5M urban residents," that typically refers to the population within municipal districts only.</blockquote>
+
+<h3>Level 4: Townships and Subdistricts (乡级)</h3>
+
+<p>With approximately <strong>40,900 divisions</strong>, this is the most granular level used in most government statistics:</p>
+
+<ul>
+<li><strong>Subdistricts</strong> (街道) — Urban areas, typically within a district</li>
+<li><strong>Towns</strong> (镇) — Semi-urban areas</li>
+<li><strong>Townships</strong> (乡) — Rural areas</li>
+<li><strong>Ethnic townships</strong> (民族乡)</li>
+<li><strong>Sumu</strong> (苏木) — Found in Inner Mongolia</li>
+
+</ul>
+<h3>Level 5: Villages (村级)</h3>
+
+<p>The <strong>ground level</strong> of Chinese administration with over <strong>620,000 units</strong>:</p>
+
+<ul>
+<li><strong>Villages</strong> (村) — Rural communities</li>
+<li><strong>Neighborhood committees</strong> (社区) — Urban residential communities</li>
+
+</ul>
+<p>Village-level data is often hard to find in centralized databases, but it's essential for granular demographic analysis and village-level poverty alleviation tracking.</p>
+
+<h2>The Administrative Code System (adcode)</h2>
+
+<p>Every administrative unit in China has a unique <strong>6-digit administrative code</strong> (adcode/行政区划代码). This code encodes the hierarchy:</p>
+
+<pre><code class="language-">
+44 03 06
+│  │  └── County/District (2 digits)
+│  └───── Prefecture (2 digits)
+└──────── Province (2 digits)
+</code></pre>
+
+<p>Example: <code>440306</code> = Guangdong Province (44) → Shenzhen City (03) → Bao'an District (06)</p>
+
+<p>This hierarchical coding makes it straightforward to:</p>
+<ul>
+<li>Determine parent-child relationships between divisions</li>
+<li>Filter data by geographic level</li>
+<li>Build tree-structured geographic databases</li>
+
+</ul>
+<h2>Data Sources and Tools</h2>
+
+<p>If you need to work with China's administrative division data, here are some options:</p>
+
+<h3>1. <a href="https://7zi.com/china/">7zi.com/china/</a> — Complete Interactive Database</h3>
+
+<p>A free, comprehensive resource with all 665,000+ administrative divisions, searchable by name, code, or location. Each division has its own dedicated page with hierarchical breadcrumbs and child listings.</p>
+
+<h3>2. GitHub Dataset</h3>
+
+<p>The complete dataset is also available as open-source JSON and CSV files:</p>
+
+<ul>
+<li><strong>Province/City/County/Town level</strong> JSON files, field-documented</li>
+<li>A single <strong>63MB CSV</strong> with all divisions (except villages)</li>
+<li>Python and JavaScript usage examples included</li>
+
+</ul>
+<h3>3. National Bureau of Statistics</h3>
+
+<p>China's National Bureau of Statistics (NBS) publishes official demographic and economic data referenced by administrative codes.</p>
+
+<h2>Practical Example: Querying Chinese Administrative Data with Python</h2>
+
+<p>Here's a quick example using the open-source dataset:</p>
+
+<pre><code class="language-python">
+import json
+
+# Load province data
+with open('province.json') as f:
+    provinces = json.load(f)
+
+# Find a specific province
+guangdong = [p for p in provinces if p['name'] == '广东省'][0]
+print(f"Code: {guangdong['adcode']}")  # 440000
+print(f"Cities: {guangdong['children_num']}")  # How many cities under it
+</code></pre>
+
+<h2>Key Takeaways</h2>
+
+<ol>
+<li><strong>China uses a 5-level administrative hierarchy</strong> — Province > Prefecture > County > Township > Village</li>
+<li><strong>Every unit has a unique 6-digit adcode</strong> that encodes its position in the hierarchy</li>
+<li><strong>665,000+ units</strong> cover the entire country — one of the world's most detailed geographic classification systems</li>
+<li><strong>The distinction between urban (区) and rural (县) areas</strong> is crucial for accurate demographic analysis</li>
+<li><strong>Open datasets</strong> now make this data freely accessible for developers and researchers</li>
+
+</ol>
+<h2>Resources</h2>
+
+<ul>
+<li><strong>Interactive Database</strong>: <a href="https://7zi.com/china/">7zi.com/china/</a></li>
+<li><strong>Open Source Dataset</strong>: Available on GitHub with JSON and CSV formats</li>
+<li><strong>Further Reading</strong>: National Bureau of Statistics (stats.gov.cn)</li>
+
+</ul>
+<hr>
+
+<p><em>This article was written based on China's official administrative division data (GB/T 2260). The dataset includes all 665,000+ divisions from province to village level.</em></p>
+
+      </div>
+    </article>
+    
+    <aside class="related-links">
+      <h3>Explore China's Divisions</h3>
+      <ul>
+        <li><a href="https://7zi.com/china/beijing.html">Beijing (北京市)</a></li>
+        <li><a href="https://7zi.com/china/shanghai.html">Shanghai (上海市)</a></li>
+        <li><a href="https://7zi.com/china/guangdong.html">Guangdong (广东省)</a></li>
+        <li><a href="https://7zi.com/china/zhejiang.html">Zhejiang (浙江省)</a></li>
+        <li><a href="https://7zi.com/china/sichuan.html">Sichuan (四川省)</a></li>
+      </ul>
+      <p><a href="https://7zi.com/china/">Browse all 665,000+ divisions →</a></p>
+    </aside>
+  </main>
+  <footer>
+    <p>View full directory at <a href="https://7zi.com/china/">7zi.com/china/</a></p>
+    <p>GitHub: <a href="https://github.com/songzuo/china-administrative-divisions">songzuo/china-administrative-divisions</a></p>
+  </footer>
+</body>
+</html>
